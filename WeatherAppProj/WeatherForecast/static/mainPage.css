@@ -1,0 +1,274 @@
+
+*{
+    margin: 0;
+    padding: top;
+}
+
+body{
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: radial-gradient(188.47% 312.92% at 99.01% 100%, #0182BA 0%, #FFFFFF 100%);
+    font-family: 'Gotham Pro', sans-serif;
+    overflow: hidden;
+}
+
+.header{
+    display: flex;
+    margin-left: 40px;
+}
+
+.logo{
+    background-color: #fff;
+    display: flex;
+    margin-top: 40px;
+    width: 135px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.2);
+}
+
+.logoimg{
+    display: flex;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.logoTxt{
+    display: flex;
+    text-align: center;
+}
+
+.searchBoxCont{
+    display: flex;
+}
+
+.searchBox{
+    display: flex;
+    background-color: #ffffff;
+    width : 268px;
+    height : 48px; 
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.2);
+    margin-left : 20px;
+}
+
+.searchBtn{
+    text-align: center;
+    margin-right : 10.65px;
+}
+
+.searchField{
+    text-align: center;
+}
+
+.search{
+    height : 15px;
+    width: 200px;
+    border: none;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.btn{
+    background-color: #ffffff;
+    border : none;
+}
+
+.panel-menu{
+    display: flex;
+}
+
+.panel{
+    display: flex;
+    margin-top: 55px;
+    margin-left : 438px;
+}
+
+.elem{
+    list-style-type: none;
+    display : inline;
+    margin-right : 40px;
+}
+
+.panel-menu ul li.active a {
+    position: relative;
+}
+
+.panel-menu ul li.active a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #5F5F5F;
+    box-shadow: 0 2px 4px #5F5F5F;
+}
+
+.link{
+    color : black;
+    font-size: 20px;
+    text-decoration : black;
+}
+
+.tomorrow-text{
+    color : white;
+}
+
+
+
+.main-panel{
+    display: flex;
+    margin-top : 100px;
+    margin-left : 224px;
+}
+
+.weather-image{
+    display: flex;
+}
+
+.image-w{
+    height: 354px;
+    width: 354px;
+}
+
+.maxTemp-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left : 88px;
+}
+
+.maxTemp{
+    font-size: 64px;
+    color : #ffffff;
+}
+
+.locat{
+    font-size: 64px;
+    color : #ffffff;
+}
+
+.locImg{
+    height: 70px;
+    width: 70px;
+}
+
+.other-inform{
+    display: flex;
+    margin-left : 88px;
+    margin-top: 90px;
+}
+
+.pression{
+    margin-left : 70px;
+}
+
+.humidity{
+    margin-left : 70px;
+}
+
+.wind-name{
+    color : #ffffff;
+}
+
+.wind-sp{
+    color : #ffffff;
+}
+
+.pression-name{
+    color : #ffffff;
+}
+
+.pression-lvl{
+    color : #ffffff;
+}
+
+.humidity-name{
+    color : #ffffff;
+}
+
+.humidity-lvl{
+    color : #ffffff;
+}
+
+.main{
+    display: flex;
+    margin-left : 23%;
+    margin-top: 120px;
+}
+
+
+.location{
+    font-size: 64px;
+    color: #ffffff;
+}
+
+.maxTemp-loc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days-panel{
+    background: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+    margin-top : 80px;
+    width : 180px;
+    height : 150px;
+    margin : 20px;
+    box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.2);
+}
+
+.image{
+    align-items: center;
+    height : 80px;
+    width : 80px;
+    margin-left: 28%;
+    margin-top: 10px;
+}
+
+.inform{
+    margin-left: 35px;
+}
+
+.inf{
+    color: #ffffff;
+}
+
+.container{
+    display: flex;
+}
+
+.container1{
+    display: flex;
+}
+
+.days-panel1{
+    background: rgba(255, 255, 255, 0.192);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(43, 43, 43, 0.568);
+    margin-top : 80px;
+    width : 180px;
+    height : 150px;
+    margin : 10px;
+    box-shadow: 0px 9px 25px rgba(0, 0, 0, 0.2);
+}
+
+.main1{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 120px;
+}

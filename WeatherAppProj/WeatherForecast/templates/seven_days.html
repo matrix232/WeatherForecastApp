@@ -1,0 +1,73 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="main1">
+    <div class="main-inform1">
+        <div class="maxTemp-loc">
+            <h1 class="location"><svg class="locImg" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24.5 11.6667C24.5 19.8333 14 26.8333 14 26.8333C14 26.8333 3.5 19.8333 3.5 11.6667C3.5 8.88189 4.60625 6.21118 6.57538 4.24204C8.54451 2.27291 11.2152 1.16667 14 1.16667C16.7848 1.16667 19.4555 2.27291 21.4246 4.24204C23.3938 6.21118 24.5 8.88189 24.5 11.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14 15.1667C15.933 15.1667 17.5 13.5997 17.5 11.6667C17.5 9.73367 15.933 8.16667 14 8.16667C12.067 8.16667 10.5 9.73367 10.5 11.6667C10.5 13.5997 12.067 15.1667 14 15.1667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                 {{city}}</h1>   
+        </div>
+        <div class="container1">
+            <div class="days-panel1">
+                <img class="image" src="{{day1.image}}" alt="none">
+                <div class="inform">
+                    <h6 class="inf">Температура: {{day1.temp}}°</h6>
+                    <h6 class="inf">Давление: {{day1.press}} мм рт. ст.</h6>
+                    <h6 class="inf">Влажность: {{day1.hum}}%</h6>
+                </div>
+            </div>
+            <div class="days-panel1">
+                <img class="image" src="{{day2.image}}" alt="none">
+                <div class="inform">
+                    <h6 class="inf">Температура: {{day2.temp}}°</h6>
+                    <h6 class="inf">Давление: {{day2.press}} мм рт. ст.</h6>
+                    <h6 class="inf">Влажность: {{day2.hum}}%</h6>
+                </div>
+            </div>
+            <div class="days-panel1">
+                <img class="image" src="{{day3.image}}" alt="none">
+                <div class="inform">
+                    <h6 class="inf">Температура: {{day3.temp}}°</h6>
+                    <h6 class="inf">Давление: {{day3.press}} мм рт. ст.</h6>
+                    <h6 class="inf">Влажность: {{day3.hum}}%</h6>
+                </div>
+            </div>
+            <div class="days-panel1">
+                <img class="image" src="{{day4.image}}" alt="none">
+                <div class="inform">
+                    <h6 class="inf">Температура: {{day4.temp}}°</h6>
+                    <h6 class="inf">Давление: {{day4.press}} мм рт. ст.</h6>
+                    <h6 class="inf">Влажность: {{day4.hum}}%</h6>
+                </div>
+            </div>
+            <div class="days-panel1">
+                <img class="image" src="{{day5.image}}" alt="none">
+                <div class="inform">
+                    <h6 class="inf">Температура: {{day5.temp}}°</h6>
+                    <h6 class="inf">Давление: {{day5.press}} мм рт. ст.</h6>
+                    <h6 class="inf">Влажность: {{day5.hum}}%</h6>
+                </div>
+            </div>
+            <div class="days-panel1">
+                <img class="image" src="{{day6.image}}" alt="none">
+                <div class="inform">
+                    <h6 class="inf">Температура: {{day6.temp}}°</h6>
+                    <h6 class="inf">Давление: {{day6.press}} мм рт. ст.</h6>
+                    <h6 class="inf">Влажность: {{day6.hum}}%</h6>
+                </div>
+            </div>
+            <div class="days-panel1">
+                <img class="image" src="{{day7.image}}" alt="none">
+                <div class="inform">
+                    <h6 class="inf">Температура: {{day7.temp}}°</h6>
+                    <h6 class="inf">Давление: {{day7.press}} мм рт. ст.</h6>
+                    <h6 class="inf">Влажность: {{day7.hum}}%</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

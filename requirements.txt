@@ -1,0 +1,5 @@
+Django
+geopy
+requests
+pandas
+openmeteo_requests

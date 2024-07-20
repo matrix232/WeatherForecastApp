@@ -1,0 +1,69 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="{% static 'mainPage.css' %}" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="logoimg">
+                <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="8.5" cy="8.5" r="8.5" fill="url(#paint0_linear_5_18)"/>
+                    <g clip-path="url(#clip0_5_18)">
+                    <path d="M21.35 10.04C21.0141 8.33772 20.0976 6.80486 18.7571 5.70325C17.4165 4.60163 15.7351 3.99961 14 4C11.11 4 8.6 5.64 7.35 8.04C5.88023 8.19883 4.52101 8.89521 3.53349 9.99532C2.54597 11.0954 1.99983 12.5217 2 14C2 17.31 4.69 20 8 20H21C23.76 20 26 17.76 26 15C26 12.36 23.95 10.22 21.35 10.04Z" fill="url(#paint1_linear_5_18)"/>
+                    </g>
+                    <defs>
+                    <linearGradient id="paint0_linear_5_18" x1="8.5" y1="0" x2="8.5" y2="17" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFD703"/>
+                    <stop offset="1" stop-color="#FFA030"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_5_18" x1="14" y1="4" x2="14" y2="20" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#81B2CE"/>
+                    <stop offset="1" stop-color="#415A68"/>
+                    </linearGradient>
+                    <clipPath id="clip0_5_18">
+                    <rect width="24" height="24" fill="white" transform="translate(2)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>                    
+            </div>
+            <div class="logoTxt">погода</div>
+        </div>
+        <div class="searchBoxCont">
+            <form class="searchBox" method="POST">
+                {% csrf_token %}
+                <div class="searchBtn">
+                    <button class="btn" type="submit">
+                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#81B2CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18.35 20.35L14 16" stroke="#81B2CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                    </button>                     
+                </div>
+                <div class="searchField">
+                    <input class="search" name="city" type="text" placeholder="Поиск метстоположения">
+                </div>
+            </form>
+        </div>
+        <div class="panel-menu">
+            <nav class="panel">
+                <ul>
+                    <li class="elem {% if request.path == '/tomorrow' %}active{% endif %}"><a class="link" href="/tomorrow">Завтра</a></li>
+                    <li class="elem  {% if request.path == '/three_days' %}active{% endif %}"><a class="link" href="/three_days">3 дня</a></li>
+                    <li class="elem {% if request.path == '/seven_days' %}active{% endif %}"><a class="link" href="/seven_days">7 дней</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="main-block">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>
